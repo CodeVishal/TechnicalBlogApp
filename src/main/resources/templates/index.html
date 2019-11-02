@@ -1,8 +1,9 @@
 <!Doctype html>
 <html xmlns:th="http://thymleaf.org">
-    <head>
-        <title>Technical Blog Application</title>
+    <head th:replace="layout :: site-head">
+        <title>SpringMVCApplication</title>
     </head>
+    <header th:replace="layout :: logged-out"></header>
     <body>
     <h1>All Technical Posts</h1>
     <main id="posts">
